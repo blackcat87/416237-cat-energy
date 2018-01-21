@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Cat Energy</title>
+  <meta name="description" content="Главная страница сайта Cat Energy. Подготовлена в рамках интенсивного курса HTML и CSS. Уровень №2"
+  />
+  <meta name="keywords" content="HTMLAcademy" />
+  <link href="./css/normalize.min.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="logo-header">
+      <a href="#">
+        <img src="http://placehold.it/33x38" alt="Логотип Cat Energy" width="33" height="38">
+      </a>
+      <a href="#">
+        <span class="">Cat</span> Energy
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li>Главная</li>
+        <li>Каталог продукции</li>
+        <li>Подбор программы</li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <section>
+      <h1>Подбор программы</h1>
+      <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <label for="user-login">Имя:*</label>
+          <input type="text" name="user_name" id="user-login" placeholder="Барсик">
+          <label for="user-weight">Вес (кг):*</label>
+          <input type="text" name="user_weight" id="user-weight" placeholder="7">
+          <label for="user-age">Возраст:</label>
+          <input type="Возраст (лет):" name="user_age" id="user-age" placeholder="7">
+        </fieldset>
+        <fieldset >
+
+            <ul >
+              <li>
+                <input class="filter-radio-checkbox" type="radio" name="weight-loss" value="yes" id="yes" checked="">
+                <label class="radio-label" for="yes" tabindex="0">Похудение</label>
+              </li>
+              <li>
+                <input class="filter-radio-checkbox" type="radio" name="weight" value="no" id="no">
+                <label class="radio-label" for="no" tabindex="0">Набор массы</label>
+              </li>
+              <li>
+                  <input class="filter-radio-checkbox" type="radio" name="advice" value="no" id="no">
+                  <label class="radio-label" for="no" tabindex="0">Не знаю (Нужен ваш совет)</label>
+                </li>
+            </ul>
+          </fieldset>
+        <fieldset>
+          <legend>Контактные данные (владельца кота)</legend>
+          <label for="user-email">E-mail:*</label>
+          <input type="text" name="user_email" id="user-email" placeholder="kuklachev@gmail.com">
+          <label for="user-phone">Телефон:*</label>
+          <input type="text" name="user_phone" id="user-phone" placeholder="8 (960) 900-60-90">
+        </fieldset>
+
+        <fieldset>
+            <legend>Комментарий:</legend>
+          <label class="visually-hidden" for="user-message">Комментарий:</label>
+          <textarea name="user_message" rows="10" cols="100" id="user-message" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Дополнительно</legend>
+            <ul>
+              <li>
+                <input class="filter-input-checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
+                <label class="checkbox-label" for="sweetener" tabindex="0">Сахарозаменитель</label>
+              </li>
+              <li>
+                <input class="filter-input-checkbox" type="checkbox" name="water" id="water">
+                <label class="checkbox-label" for="water" tabindex="0">Питьевая вода</label>
+              </li>
+              <li>
+                <input class="filter-input-checkbox" type="checkbox" name="milk" id="milk">
+                <label class="checkbox-label" for="milk" tabindex="0">Молоко</label>
+              </li>
+              <li>
+                <input class="filter-input-checkbox" type="checkbox" name="vitamins" id="vitamins" >
+                <label class="checkbox-label" for="vitamins" tabindex="0">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="btn-green">Отправить заявку</button>
+      </form>
+      <p class="comment">* — Обязательные поля</p>
+    </section>
+  </main>
+  <footer>
+    <h2 class="visually-hidden">Наши контакты</h2>
+    <div class="contacts">
+      <ul>
+        <li>
+          <h3>приглашаем к сотрудничеству дилеров!</h3>
+        </li>
+        <li>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </li>
+      </ul>
+
+    </div>
+    <div class="map">
+      <img src="http://placehold.it/1345x645" alt="Карта проезда" width="1345" height="645">
+      <img class="logo-map" src="http://placehold.it/55x53" alt="Логотип" width="55" height="53">
+    </div>
+    <div class="logo-footer">
+      <a href="#">
+        <span class="">Cat</span> Energy
+      </a>
+    </div>
+    <div class="social-icon">
+      <a href="#">
+        <img src="http://placehold.it/22x12" alt="Вконтакте" width="22" height="12">
+      </a>
+      <a href="#">
+        <img src="http://placehold.it/16x16" alt="Инстаграмм" width="16" height="16">
+      </a>
+      <a href="#">
+        <img src="http://placehold.it/10x19" alt="Фейсбук" width="10" height="19">
+      </a>
+    </div>
+    <div>
+      <p class="logo-academy">HTMLAcademy</p>
+      <img src="http://placehold.it/320x326" alt="Логотип HTML Academy" width="27" height="34">
+    </div>
+  </footer>
+</body>
+
+</html>
