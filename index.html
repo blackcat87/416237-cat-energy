@@ -12,13 +12,13 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="header">
 
-    <a class="page-header__logo-link" href="#">
-      <img class="page-header__logo-img" src="http://placehold.it/33x38" alt="Логотип Cat Energy" width="33" height="38">
+    <a class="logo header__logo" href="#">
+      <img class="logo__img" src="http://placehold.it/33x38" alt="Логотип Cat Energy" width="33" height="38">
     </a>
-    <a class="page-header__name" href="#">
-      <b class="page-header__name--first">Cat</b> Energy
+    <a class="header__name" href="#">
+      <b>Cat</b> Energy
     </a>
 
     <nav class "main-nav">
@@ -34,33 +34,27 @@
 
   </header>
 
-  <main class="page-main">
+  <main class="main">
     <section class="banner">
       <h1 class="banner__title">Функциональное питание для котов</h1>
       <p class="banner__slogan">Занялся собой? Займись котом!</p>
-      <a class="button banner__btn btn--green">Подобрать программу</a>
+      <a class="button banner__btn button--green">Подобрать программу</a>
     </section>
     <section class="programm">
-      <h2 class="visually-hidden">Программы питания для котов</h2>
+      <h2 class="programm__title visually-hidden">Программы питания для котов</h2>
       <ul class="programm__list">
-        <li class="programm__item">
-          <img class="programm__img" src="http://placehold.it/50x51" alt="Программа Похудение" width="50" height="51">
+        <li class="programm__item programm__item--slim">
           <h2 class="programm__title">Похудение</h2>
-          <div class="programm__description">
-            <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет
+            <p class="programm__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет
               вашему питомцу сбросить лишний вес.</p>
-          </div>
-          <a class="programm__button btn--text" href="#">Каталог Slim</a>
+          <a class="programm__button button--text" href="#">Каталог Slim</a>
         </li>
-        <li class="programm__item">
-          <img class="programm__img" src="http://placehold.it/50x51" alt="Программа Похудение" width="50" height="51">
+        <li class="programm__item programm__item--pro">
           <h2 class="programm__title">Набор массы</h2>
-          <div class="programm__description">
-            <p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые
+            <p class="programm__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые
               мышцы!
             </p>
-          </div>
-          <a class="programm__button btn--text" href="#">Каталог Pro</a>
+          <a class="programm__button button--text" href="#">Каталог Pro</a>
         </li>
       </ul>
     </section>
@@ -88,24 +82,26 @@
           тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
       </div>
       <ul class="example__list">
-        <li class="example__item">
-          <div>5 кг</div>
-          <div>снижение веса</div>
+        <li class="example__item example-item">
+          <span class="example-item__title">5 кг</span>
+          <span class="example-item__text">снижение веса</span>
         </li>
-        <li class="example__item">
-          <div>60 дней</div>
-          <div>затрачено времени</div>
+        <li class="example__item example-item">
+          <div class="example-item__title">60 дней</div>
+          <div class="example-item__text">затрачено времени</div>
         </li>
       </ul>
       <div class="example__price">Затраты на питание: 15 000 руб.</div>
-      <img src="http://placehold.it/311x232" width="311" height="232">
-      <div class="example__effect">
-        <p>Было</p>
-        <p>Стало</p>
-      </div>
+      <img class="example__img" src="http://placehold.it/311x232" width="311" height="232">
+      <div class="example__effect example-effect" >
+          <p class="example-effect__text">Было</p>
+          <input type="checkbox" class="example-effect__checkbox" id="example-effect__checkbox">
+          <label class="example-effect__label" for="example-effect__checkbox"></label>
+          <p class="example-effect__text">Стало</p>
+        </div>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="footer">
     <h2 class="visually-hidden">Наши контакты</h2>
     <div class="contacts">
       <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
@@ -115,11 +111,11 @@
       <img class="map__img" src="http://placehold.it/1345x645" alt="Карта проезда" width="1345" height="645">
       <img class="map__logo" src="http://placehold.it/55x53" alt="Логотип" width="55" height="53">
     </div>
-    <div class="logo-footer">
-      <a class="logo-footer__name" href="#">
-        <b class="logo-footer__name--first">Cat</b> Energy
+
+      <a class="footer__name" href="#">
+        <b >Cat</b> Energy
       </a>
-    </div>
+
     <div class="social-icon">
       <a class="social-icon__item social-icon__item--vk" href="#">Вконтакт
       </a>
@@ -128,9 +124,9 @@
       <a class="social-icon__item social-icon__item--facebook" href="#">Фейсбук
       </a>
     </div>
-    <div>
-      <p class="logo-academy">HTMLAcademy</p>
-      <img src="http://placehold.it/320x326" alt="Логотип HTML Academy" width="27" height="34">
+    <div class="copyright">
+      <p class="copyright__text">HTMLAcademy</p>
+      <img class="copyright__logo" src="http://placehold.it/320x326" alt="Логотип HTML Academy" width="27" height="34">
     </div>
   </footer>
 </body>
