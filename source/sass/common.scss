@@ -1,0 +1,28 @@
+// body {
+//   background: ;
+//   background-image: ;
+//   font-size: ;
+//   font-family: ;
+//   font-weight: ;
+//   letter-spacing: ;
+//   color: ;
+//   padding: ;
+//   margin: ;
+// }
+%container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%default-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin set-font-size ($font-size: 16px) {
+  font-size: $font-size;
+  font-size: #{($font-size/16px)}rem;
+}

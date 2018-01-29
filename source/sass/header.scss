@@ -1,0 +1,17 @@
+// .header {
+//   background: ;
+//   background-image: ;
+//   font-size: ;
+//   font-family: ;
+//   font-weight: ;
+//   letter-spacing: ;
+//   color: ;
+//   padding: ;
+//   margin: ;
+// }
+
+
+.header {
+  @extend %container;
+  @include set-font-size(20px);
+}
