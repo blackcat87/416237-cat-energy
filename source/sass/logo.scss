@@ -1,0 +1,28 @@
+.logo {
+  width: 70%;
+  min-height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__img-icon {
+  width: 33px;
+  height: 38px;
+}
+
+.logo__img-name {
+  width: 103px;
+  height: 19px;
+  text-align: center;
+}
+
+.logo__link {
+  opacity: 1;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
