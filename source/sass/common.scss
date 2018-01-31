@@ -29,18 +29,6 @@ img {
   height: auto;
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  border: 0;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-}
-
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
@@ -55,10 +43,9 @@ img {
 }
 
 %container {
-  width: 280px;
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
 }
 
 %default-list {
@@ -67,6 +54,34 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+%font-content {
+  color: #444444;
+  font-family: $font-text;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+%font-h2 {
+  color: #111111;
+  font-family: $main-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+%font-h3 {
+  margin: 0;
+  color: #111111;
+  font-family: $main-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37.02px;
+  text-transform: uppercase;
 }
 
 @mixin set-font-size ($font-size: 16px) {

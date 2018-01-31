@@ -1,0 +1,38 @@
+.example {
+  @extend %container;
+  background: #f2f2f2;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.example__title {
+  @extend %font-h2;
+  align-items: flex-start;
+}
+
+.example__description {
+  @extend %font-content;
+}
+
+.example__list {
+  @extend %default-list;
+  justify-content: center;
+}
+
+.example__price {
+  color: #111111;
+font-family: $main-font;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+text-transform: uppercase;
+text-align: center;
+}
+
+.example__img {
+  text-align: center;
+}
+
+.example__effect {
+
+}

@@ -1,0 +1,61 @@
+.programm {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.programm__list {
+  @extend %default-list;
+}
+
+.programm__item {
+  background: $secondary-color;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.programm__title {
+  @extend %font-h3;
+  &--pro::before {
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #68b738;
+    margin-right: 20px; // background: url(../img/icon-cat-pro.svg) no-repeat;
+  }
+  &--slim::before {
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #68b738;
+    margin-right: 20px; // background: url(../img/icon-cat-slim.svg) no-repeat;
+  }
+}
+
+.programm__description {
+  @extend %font-content;
+  &::after {
+    content: " ";
+    display: block;
+    width: 240px;
+    height: 1px;
+    background: #d9d9d9;
+    margin: 20px 0;
+  }
+}
+
+.programm__button {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: auto;
+}

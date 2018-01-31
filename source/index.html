@@ -7,28 +7,34 @@
   <meta name="description" content="Главная страница сайта Cat Energy. Подготовлена в рамках интенсивного курса HTML и CSS. Уровень №2"
   />
   <meta name="keywords" content="HTMLAcademy" />
-  <link href="./css/normalize.min.css" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
-<div class="logo">
-    <a class="logo__link" href="#">
-      <img class="logo__img-icon" src="./img/icon-logo-mobile.svg" alt="Логотип Cat Energy" width="33" height="38">
-    </a>
-    <a class="logo__link" href="#">
-      <img class="logo__img-name" src="./img/logo-mobile-header.svg" alt="Логотип Cat Energy" width="103" height="19">
-    </a>
-
-  </div>
+    <div class="logo">
+      <a class="logo__link" href="#">
+        <img class="logo__img-icon" src="./img/icon-logo-mobile.svg" alt="Логотип Cat Energy" width="33" height="38">
+      </a>
+      <a class="logo__link" href="#">
+        <img class="logo__img-name" src="./img/logo-mobile-header.svg" alt="Логотип Cat Energy" width="103" height="19">
+      </a>
+      <button class="logo__toggle logo__toggle--opened" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
     <nav class "main-nav main-nav--closed">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="#">Главная</a></li>
-          <li class="site-list__item"><a href="#">Каталог продукции</a></li>
-          <li class="site-list__item"><a class="site-list__item--active" href="#">Подбор программы</a></li>
+          <li class="site-list__item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__item--active" href="#">Подбор программы</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -39,20 +45,20 @@
     <section class="banner">
       <h1 class="banner__title">Функциональное питание для котов</h1>
       <p class="banner__slogan">Занялся собой? Займись котом!</p>
-      <img class="banner__img" src="../img/index-can-mobile@1x.png" alt="Cat Energy Pro" width="280px" height: 270px;>
+      <img class="banner__img" src="./img/index-can-mobile@1x.png" alt="Cat Energy Pro" width="280px" height: 270px;>
       <a class="button banner__btn button--green">Подобрать программу</a>
     </section>
     <section class="programm">
       <h2 class="programm__title visually-hidden">Программы питания для котов</h2>
       <ul class="programm__list">
-        <li class="programm__item programm__item--slim">
-          <h2 class="programm__title">Похудение</h2>
+        <li class="programm__item">
+          <h3 class="programm__title programm__title--slim">Похудение</h3>
           <p class="programm__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет
             вашему питомцу сбросить лишний вес.</p>
           <a class="programm__button button--text" href="#">Каталог Slim</a>
         </li>
-        <li class="programm__item programm__item--pro">
-          <h2 class="programm__title">Набор массы</h2>
+        <li class="programm__item">
+          <h3 class="programm__title programm__title--pro">Набор массы</h3>
           <p class="programm__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые
             мышцы!
           </p>
@@ -94,7 +100,8 @@
         </li>
       </ul>
       <div class="example__price">Затраты на питание: 15 000 руб.</div>
-      <img class="example__img" src="http://placehold.it/311x232" width="311" height="232">
+      <img class="example__img" src="./img/before-mobile@1x.png" width="311" height="232">
+      <img class="example__img" src="./img/after-mobile@1x.png" width="251" height="240">
       <div class="example__effect example-effect">
         <p class="example-effect__text">Было</p>
         <input type="checkbox" class="example-effect__checkbox" id="example-effect__checkbox">
@@ -110,20 +117,45 @@
       <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
     <div class="map">
-      <img class="map__img" src="http://placehold.it/1345x645" alt="Карта проезда" width="1345" height="645">
-      <img class="map__logo" src="http://placehold.it/55x53" alt="Логотип" width="55" height="53">
+      <img class="map__img" src="./img/map-pin.png" alt="Карта проезда" width="1345" height="645">
+      <img class="map__logo" src="./img/map-pin.png" alt="Логотип" width="55" height="53">
     </div>
 
-    <a class="footer__name" href="#">
-      <b>Cat</b> Energy
+    <a class="footer__logo" href="#">
+      <img class="footer__logo-img" src="./img/logo-footer.svg" alt="Логотип Cat Energy" width="128" height="24">
     </a>
 
     <div class="social-icon">
-      <a class="social-icon__item social-icon__item--vk" href="#">Вконтакт
+      <a class="social-icon__item social-icon__item--vk" href="#">
+        <?xml version="1.0" encoding="utf-8"?>
+
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
+          <g>
+            <path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
+            c0,0.1,0,0.6-0.3,0.9c-0.3,0.3-0.8,0.4-0.9,0.4l-1.4,0c-0.7,0-3.2-0.2-5.4-2.3C2.5,7.1,0.2,2.2,0.1,2C0,1.6-0.1,1.2,0.2,0.9
+            c0.3-0.3,0.8-0.4,1-0.4l3,0l0.1,0c0.1,0,0.4,0.1,0.7,0.3c0.3,0.2,0.4,0.5,0.5,0.6c0,0,0.5,1.1,1.1,2c1,1.5,1.4,1.9,1.5,2
+            C8.2,5,8.3,4,8.2,3.1c0-0.4-0.1-0.8-0.2-1C7.9,2,7.7,1.9,7.5,1.9L6.9,1.4C6.9,0.9,7.4,0.5,7.8,0.3C8.3,0.1,9.1,0,10.1,0l0.5,0
+            c0.9,0,1.2,0.1,1.6,0.1c1.2,0.3,1.2,1.3,1.1,2.5c0,0.4,0,0.8,0,1.2c0,0.1,0,0.2,0,0.4c0,0.3,0,0.8,0.1,1c0.2-0.1,0.6-0.5,1.5-1.9
+            c0.6-0.9,1-1.9,1.1-2.1l0,0c0.1-0.3,0.4-0.7,1.2-0.7l3.1,0c0,0,0.1,0,0.3,0c0.7,0,1.2,0.2,1.3,0.7c0.2,0.5,0.1,1.3-1.7,3.5
+            c-0.3,0.3-0.5,0.6-0.7,0.9C19,6,18.6,6.6,18.6,6.7c0,0.1,0.5,0.5,0.9,0.9c1.1,0.9,1.9,1.7,2.2,2.3c0.4,0.6,0.3,1,0.2,1.3
+            c-0.3,0.7-1.2,0.7-1.4,0.8l-2.8,0C17.7,12,17.6,12,17.6,12z M13.7,8.3c0.7,0,1.2,0.6,1.8,1.2c0.4,0.4,0.7,0.8,1.1,1
+            c0.5,0.3,1,0.3,1,0.3l0.1,0l2.8,0c0.1,0,0.3-0.1,0.4-0.1c0,0,0-0.1-0.1-0.1c-0.3-0.5-1-1.3-2-2.1c-0.9-0.7-1.3-1.1-1.4-1.7
+            c0-0.6,0.4-1.1,1.2-2.1c0.2-0.2,0.4-0.5,0.7-0.8c1.1-1.4,1.4-2,1.5-2.3c-0.1,0-0.5,0-0.5,0l-3.2,0c-0.1,0-0.2,0-0.2,0
+            C16.9,2,16.4,3.1,15.8,4c-1.4,2.1-2,2.4-2.5,2.4c-0.1,0-0.3,0-0.4-0.1c-0.7-0.4-0.7-1.4-0.7-2.1c0-0.1,0-0.2,0-0.3
+            c0-0.5,0-0.9,0-1.3c0.1-1.3,0-1.3-0.3-1.4c-0.3-0.1-0.5-0.1-1.4-0.1l-0.5,0c-0.5,0-1,0-1.4,0.1c0.1,0.1,0.1,0.1,0.2,0.2
+            c0.4,0.5,0.4,1.5,0.4,1.7c0.1,1.3,0,2.9-0.7,3.3C8.4,6.4,8.3,6.5,8.1,6.5C7.5,6.5,6.8,5.8,5.6,4C5,2.9,4.5,1.8,4.5,1.8
+            c0,0,0-0.1-0.1-0.1c-0.1,0-0.2-0.1-0.2-0.1l-2.9,0c0,0,0,0-0.1,0c0.4,0.9,2.5,5,4.8,7.2c2,1.9,4.3,2,4.7,2l1.4,0c0,0,0.2,0,0.2-0.1
+            c0,0,0,0,0-0.1c0-0.2,0-2,1.2-2.3C13.5,8.3,13.6,8.3,13.7,8.3z" />
+          </g>
+        </svg>
+        <span class="visually-hidden">Вконтакт</span>
       </a>
-      <a class="social-icon__item social-icon__item--instagram" href="#">Инстаграмм
+      <a class="social-icon__item social-icon__item--instagram" href="#">
+        <span class="visually-hidden">Инстаграмм</span>
       </a>
-      <a class="social-icon__item social-icon__item--facebook" href="#">Фейсбук
+      <a class="social-icon__item social-icon__item--facebook" href="#">
+        <span class="visually-hidden">>Фейсбук</span>
       </a>
     </div>
     <div class="copyright">

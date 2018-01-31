@@ -1,9 +1,9 @@
 .logo {
-  width: 70%;
   min-height: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
 }
 
 .logo__img-icon {
@@ -24,5 +24,50 @@
   }
   &:active {
     opacity: 0.6;
+  }
+}
+
+.logo__toggle {
+  position: relative;
+  background: none;
+  display: block;
+  width: 24px;
+  height: 18px;
+  padding:0;
+  cursor: pointer;
+  border: none;
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: " ";
+    width: 24px;
+    height: 2px;
+    display: block;
+    background-color: #222222;
+    box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
+  }
+  &--opened {
+    &::before,
+    &::after {
+      position: absolute;
+      top: 7px;
+      right: 0;
+      content: " ";
+      display: block;
+      width: 23px;
+      height: 2px;
+      background-color: #222222;
+    }
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+    &::after {
+      // position: absolute;
+      // top:0;
+      // left:0;
+      transform: rotate(-45deg);
+    }
   }
 }
