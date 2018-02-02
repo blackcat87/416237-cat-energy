@@ -3,6 +3,7 @@
   background: #f2f2f2;
   margin: 0;
   margin-bottom: 20px;
+  padding: 20px;
 }
 
 .example__title {
@@ -16,23 +17,25 @@
 
 .example__list {
   @extend %default-list;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
 
 .example__price {
   color: #111111;
-font-family: $main-font;
-font-size: 14px;
-font-weight: 400;
-line-height: 20px;
-text-transform: uppercase;
-text-align: center;
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .example__img {
   text-align: center;
 }
 
-.example__effect {
-
-}
+.example__effect {}

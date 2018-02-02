@@ -64,6 +64,16 @@ img {
   line-height: 18px;
 }
 
+%font-h1 {
+  font-family: $main-font;
+  color: #111111;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
 %font-h2 {
   color: #111111;
   font-family: $main-font;

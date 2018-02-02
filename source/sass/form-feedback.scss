@@ -1,0 +1,31 @@
+.form-feedback {
+  color: #222222;
+  font-family: $main-form;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form-feedback fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-feedback fieldset:nth-child(2) {
+  border-bottom: 1px solid #ededed;
+  border-top: 1px solid #ededed;
+}
+
+.form-feedback__label {
+  color: #111111;
+  font-family: $main-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.form-feedback__input {}

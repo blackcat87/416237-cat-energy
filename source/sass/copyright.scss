@@ -1,0 +1,35 @@
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  justify-content: space-between;
+  &::before {
+    content: " ";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #d9d9d9;
+    margin: 30px 0;
+  }
+}
+
+.copyright__text {
+  color: #444444;
+  font-family: $font-text;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.copyright svg {
+  fill: #666666;
+}
+
+.copyright svg:hover {
+  fill: #a4d189;
+}
+
+.copyright svg:active {
+  opacity: 0.3;
+  fill: #a4d189;
+}

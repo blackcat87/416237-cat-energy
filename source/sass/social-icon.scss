@@ -1,31 +1,19 @@
 .social-icon {
   display: flex;
   padding: 0 20px;
-  text-align: center;
-  &::after {
-    content: " ";
-    display: block;
-    height: 1px;
-    background: #d9d9d9;
-    margin: 30px 0;
-  }
+  justify-content: space-evenly;
+
 }
 
 .social-icon__item {
   text-align: center;
 }
 
-.social-icon__item:hover {
-  opacity: 0.8;
-
-polygon {
-    fill: #a4d189;
-  }
+.social-icon__item svg:hover {
+  fill: #a4d189;
 }
 
-.social-icon__item:active {
+.social-icon__item svg:active {
   opacity: 0.3;
-  polygon {
-    fill: #a4d189;
-  }
+  fill: #a4d189;
 }

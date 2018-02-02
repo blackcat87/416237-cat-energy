@@ -1,0 +1,22 @@
+.catalog {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+.catalog__title {
+  @extend %font-h1;
+}
+
+.catalog__list {
+  @extend %default-list
+}
+
+.catalog__item {
+
+  border-bottom: 1px solid #ededed;
+  padding: 20px 0;
+}
+.catalog__item:first-child
+{border-top: 1px solid #ededed;}

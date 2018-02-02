@@ -16,6 +16,7 @@
 
 .concept__item {
   @extend %font-content;
+  display: flex;
   margin-bottom: 20px;
   &--food::before {
     content: " ";
@@ -23,8 +24,44 @@
     vertical-align: middle;
     width: 60px;
     height: 60px;
-    background-color: #68b738;
     margin-right: 20px;
-    background-image: url(../img/advantage-clock@1x.png) no-repeat center;
+    background: url(../img/advantage-leaf@1x.png) no-repeat center;
+    background-color: #68b738;
   }
+  &--powder-form::before {
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background: url(../img/advantage-powder@1x.png) no-repeat center;
+    background-color: #68b738;
+  }
+  &--one-meal::before {
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background: url(../img/advantage-dining@1x.png) no-repeat center;
+    background-color: #68b738;
+  }
+  &--fast-result::before {
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background: url(../img/advantage-clock@1x.png) no-repeat center;
+    background-color: #68b738;
+  }
+}
+
+.concept__description {
+  width: 195px;
+  padding: 0;
+  margin: 0;
 }
