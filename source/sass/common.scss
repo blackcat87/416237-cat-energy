@@ -12,6 +12,17 @@
   font-style: normal;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 body {
   min-width: 320px;
   background: #ffffff;
@@ -46,6 +57,26 @@ img {
   width: 320px;
   margin-left: auto;
   margin-right: auto;
+}
+
+%icon-title {
+  &::before {
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    background-color: #68b738;
+  }
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 %default-list {

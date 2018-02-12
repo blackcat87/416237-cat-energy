@@ -1,7 +1,6 @@
 .contacts {
   padding: 0 20px;
   margin: 0;
-  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   background: #ffffff;
@@ -15,8 +14,10 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 10px 0 26px 0;
 }
 
 .contacts__adress {
   @extend %font-content;
+  padding-left: 20px;
 }

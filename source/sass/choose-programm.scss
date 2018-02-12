@@ -2,11 +2,11 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
 }
 
 .choose-programm__title {
   @extend %font-h1;
+  margin: 14px 0 29px;
 }
 
 .choose-programm__text {
