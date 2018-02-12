@@ -49,49 +49,61 @@
       <form class="choose-programm__form form-feedback" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form-feedback__fieldset">
           <div class="form-feedback__text">
-          <label class="form-feedback__label" for="user-login">Имя:*</label>
-          <input class="form-feedback__input" type="text" name="user_name" id="user-login" placeholder="Барсик">
-        </div>
-        <div class="form-feedback__text">
-          <label class="form-feedback__label" for="user-weight">Вес (кг):*</label>
-          <input class="form-feedback__input" type="text" name="user_weight" id="user-weight" placeholder="7">
-        </div>
-        <div class="form-feedback__text">
-          <label class="form-feedback__label" for="user-age">Возраст (лет):</label>
-          <input class="form-feedback__input" type="Возраст (лет):" name="user_age" id="user-age" placeholder="7">
-        </div>
+            <label class="form-feedback__label" for="user-login">Имя:*</label>
+            <input class="form-feedback__input" type="text" name="user_name" id="user-login" placeholder="Барсик">
+          </div>
+          <div class="form-feedback__text">
+            <label class="form-feedback__label" for="user-weight">Вес (кг):*</label>
+            <input class="form-feedback__input" type="text" name="user_weight" id="user-weight" placeholder="7">
+          </div>
+          <div class="form-feedback__text">
+            <label class="form-feedback__label" for="user-age">Возраст (лет):</label>
+            <input class="form-feedback__input" type="Возраст (лет):" name="user_age" id="user-age" placeholder="7">
+          </div>
         </fieldset>
         <fieldset class="form-feedback__fieldset">
           <ul class="form-feedback__list">
             <li class="form-feedback__item">
-              <input class="form-feedback__radio" type="radio" name="weight-loss" value="yes" id="yes" checked="">
-              <label class="form-feedback__radio-label" for="yes" tabindex="0">Похудение</label>
+              <input class="form-feedback__radio" type="radio" name="weight-loss" value="yes" id="weight-loss" checked="">
+              <label class="form-feedback__radio-label" for="weight-loss" tabindex="0">Похудение</label>
             </li>
             <li class="form-feedback__item">
-              <input class="form-feedback__radio" type="radio" name="weight" value="no" id="no">
-              <label class="form-feedback__radio-label" for="no" tabindex="0">Набор массы</label>
+              <input class="form-feedback__radio" type="radio" name="weight" value="no" id="weight">
+              <label class="form-feedback__radio-label" for="weight" tabindex="0">Набор массы</label>
             </li>
             <li class="form-feedback__item">
-              <input class="form-feedback__radio" type="radio" name="advice" value="no" id="no">
-              <label class="form-feedback__radio-label" for="no" tabindex="0">Не знаю (Нужен ваш совет)</label>
+              <input class="form-feedback__radio" type="radio" name="advice" value="no" id="advice">
+              <label class="form-feedback__radio-label" for="advice" tabindex="0">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form-feedback__fieldset">
-          <legend class="form-feedback__legend">Контактные данные (владельца кота)</legend>
-          <label class="form-feedback__label" for="user-email">E-mail:*</label>
-          <input class="form-feedback__input" type="text" name="user_email" id="user-email" placeholder="kuklachev@gmail.com">
-          <label class="form-feedback__label" for="user-phone">Телефон:*</label>
-          <input class="form-feedback__input" type="text" name="user_phone" id="user-phone" placeholder="8 (960) 900-60-90">
+          <legend class="form-feedback__legend">
+            <span>Контактные данные (владельца кота)</span>
+          </legend>
+          <div class="form-feedback__text">
+            <label class="form-feedback__label" for="user-email">E-mail:*</label>
+            <input class="form-feedback__input" type="text" name="user_email" id="user-email" placeholder="kuklachev@gmail.com">
+          </div>
+          <div class="form-feedback__text">
+            <label class="form-feedback__label" for="user-phone">Телефон:*</label>
+            <input class="form-feedback__input" type="text" name="user_phone" id="user-phone" placeholder="8 (960) 900-60-90">
+          </div>
         </fieldset>
 
         <fieldset class="form-feedback__fieldset">
-          <legend class="form-feedback__legend">Комментарий:</legend>
+          <legend class="form-feedback__legend">
+            <span>Комментарий:</span>
+          </legend>
+          <div class="form-feedback__text">
           <label class="form-feedback__label visually-hidden" for="user-message">Комментарий:</label>
           <textarea class="form-feedback__textarea" name="user_message" id="user-message" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
         </fieldset>
         <fieldset class="form-feedback__fieldset">
-          <legend class="form-feedback__legend">Дополнительно</legend>
+          <legend class="form-feedback__legend">
+            <span>Дополнительно</span>
+          </legend>
           <ul class="form-feedback__list">
             <li class="form-feedback__item">
               <input class="form-feedback__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
@@ -111,7 +123,9 @@
             </li>
           </ul>
         </fieldset>
+        <div class="form-feedback__text">
         <button class="form-feedback__button button button--green">Отправить заявку</button>
+        </div>
       </form>
       <small class="form-feedback__comment">
         <sup>*</sup> — Обязательные поля</small>
