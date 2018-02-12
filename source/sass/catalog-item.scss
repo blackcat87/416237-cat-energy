@@ -1,0 +1,15 @@
+.catalog-item {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.catalog-item__title {
+  color: #111111;
+  font-family: $main-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding-top: 5px;
+}

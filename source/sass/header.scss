@@ -1,0 +1,13 @@
+.header {
+  @extend %container;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: $main-font;
+  color: #111111;
+  background: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+}

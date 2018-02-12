@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url('../fonts/Oswaldregular.woff2') format('woff2'), url('../fonts/Oswaldregular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('../fonts/Oswaldmedium.woff2') format('woff2'), url('../fonts/Oswaldmedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+  color: #444444;
+  font-family: "Oswald", "Arial MT", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+%container {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%icon-title {
+  &::before {
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    background-color: #68b738;
+  }
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+%default-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+%font-content {
+  color: #444444;
+  font-family: $font-text;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+%font-h1 {
+  font-family: $main-font;
+  color: #111111;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+%font-h2 {
+  color: #111111;
+  font-family: $main-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+%font-h3 {
+  margin: 0;
+  color: #111111;
+  font-family: $main-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37.02px;
+  text-transform: uppercase;
+}
+
+@mixin set-font-size ($font-size: 16px) {
+  font-size: $font-size;
+  font-size: #{($font-size/16px)}rem;
+}

@@ -1,0 +1,51 @@
+.example {
+  @extend %container;
+  background: #f2f2f2;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 20px 0 35px;
+}
+
+.example__title {
+  @extend %font-h2;
+  align-items: flex-start;
+  margin-bottom: 22px;
+  padding: 0 20px 0 20px;
+}
+
+.example__description {
+  @extend %font-content;
+padding: 0 20px;
+}
+
+.example__list {
+  @extend %default-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  padding: 0 20px;
+}
+
+
+.example__price {
+  color: #111111;
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.example__img {
+  text-align: center;
+}
+
+.example__effect {
+  text-align: center;
+  margin-top: 30px;
+}

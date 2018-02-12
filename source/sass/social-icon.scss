@@ -1,0 +1,22 @@
+.social-icon {
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-evenly;
+
+}
+
+.social-icon__item {
+  text-align: center;
+}
+
+.social-icon__item svg {
+  fill: #666666;
+}
+.social-icon__item svg:hover {
+  fill: #a4d189;
+}
+
+.social-icon__item svg:active {
+  opacity: 0.3;
+  fill: #a4d189;
+}

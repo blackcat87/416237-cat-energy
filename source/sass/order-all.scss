@@ -1,0 +1,25 @@
+.order-all {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 280px;
+  height: 289px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  background: url(../img/gift-photo-mobile@1x.jpg) no-repeat;
+  text-align: center;
+  & svg {
+    fill: white;
+  }
+}
+
+.order-all__text {
+  color: #ffffff;
+  font-family: $font-text;
+  font-size: 16px;
+  font-weight: 400;
+}

@@ -1,0 +1,30 @@
+.banner {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  color: #ffffff;
+  background: url(../img/index-background-mobile@1x.jpg) no-repeat;
+  border-top: 1px solid #e6e6e6;
+}
+
+.banner__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  margin: 15px 0;
+  padding: 10px;
+}
+
+.banner__slogan {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.banner__btn {
+  /* margin-top: 20px;*/
+}
