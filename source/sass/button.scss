@@ -2,6 +2,7 @@
   min-width: 280px;
   height: 40px;
   display: block;
+  font-family: $main-font;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -35,6 +36,7 @@
 }
 
 .button--text {
+  position: relative;
   display: block;
   color: #111111;
   font-family: $main-font;
@@ -42,26 +44,49 @@
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
+  &::before {
+    content: "";
+    position: absolute;
+    top:7px;
+    left: 96px;
+    width: 17px;
+    height: 2px;
+    background-color: #3e4242;
+  }
   &::after {
-    background: url(../img/icon-right-arrow-long.svg) no-repeat;
+    position: absolute;
+    top:3px;
+    left: 113px;
     content: " ";
-    display: inline-block;
-    width: 24px;
-    height: 11px;
-    margin-left: 10px;
+    display: block;
+    border: 5px solid transparent;
+    border-left: 7px solid #3e4242;
+    width: 0;
+    height: 0;
   }
 }
 
 .button--text:hover {
   opacity: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    top:7px;
+    left: 96px;
+    width: 26px;
+    height: 2px;
+    background-color: #3e4242;
+  }
   &::after {
-    background: url(../img/icon-right-arrow-long.svg) no-repeat;
-    background-size: 33px 11px;
+    position: absolute;
+    top:3px;
+    left: 122px;
     content: " ";
-    display: inline-block;
-    width: 33px;
-    height: 11px;
-    margin-left: 10px;
+    display: block;
+    border: 5px solid transparent;
+    border-left: 7px solid #3e4242;
+    width: 0;
+    height: 0;
   }
 }
 
