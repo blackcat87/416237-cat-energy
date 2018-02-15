@@ -1,6 +1,12 @@
 .footer {
-  @extend %container;
+ width: 100%;
   background: #f2f2f2;
+  @media (min-width: $tablet-width) {
+    background: #ffffff;
+  }
+  @media (min-width: $desktop-width) {
+    background: #ffffff;
+  }
 }
 
 .footer__logo {

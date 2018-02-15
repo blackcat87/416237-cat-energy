@@ -1,5 +1,5 @@
 .button {
-  npmwidth: 280px;
+  width: 280px;
   height: 40px;
   display: block;
   font-family: $main-font;
@@ -47,15 +47,23 @@
   &::before {
     content: "";
     position: absolute;
-    top:7px;
+    top: 7px;
     left: 96px;
     width: 17px;
     height: 2px;
     background-color: #3e4242;
+    @media (min-width: $tablet-width) {
+      top: 9px;
+      left: 131px;
+    }
+    @media (min-width: $desktop-width) {
+      top: 9px;
+      left: 131px;
+    }
   }
   &::after {
     position: absolute;
-    top:3px;
+    top: 3px;
     left: 113px;
     content: " ";
     display: block;
@@ -63,6 +71,22 @@
     border-left: 7px solid #3e4242;
     width: 0;
     height: 0;
+    @media (min-width: $tablet-width) {
+      top: 5px;
+    left: 148px;
+    }
+    @media (min-width: $desktop-width) {
+      top: 5px;
+      left: 148px;
+    }
+  }
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -71,7 +95,7 @@
   &::before {
     content: "";
     position: absolute;
-    top:7px;
+    top: 7px;
     left: 96px;
     width: 26px;
     height: 2px;
@@ -79,7 +103,7 @@
   }
   &::after {
     position: absolute;
-    top:3px;
+    top: 3px;
     left: 122px;
     content: " ";
     display: block;

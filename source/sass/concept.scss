@@ -1,24 +1,53 @@
 .concept {
+  @extend %container;
   display: flex;
   flex-wrap: wrap;
   padding: 0 20px;
-  margin: 0;
   margin-bottom: 20px;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .concept__title {
   @extend %font-h2;
   margin-bottom: 28px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+  }
 }
 
 .concept__list {
   @extend %default-list;
+  @media (min-width: $tablet-width) {
+  justify-content: space-between;
+  }
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    }
 }
 
 .concept__item {
   @extend %font-content;
+  position: relative;
   display: flex;
   margin-bottom: 20px;
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 230px;
+    margin-bottom: 87px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 230px;
+    margin-bottom: 0;
+  }
   &--food::before {
     content: " ";
     display: inline-block;
@@ -28,6 +57,50 @@
     margin-right: 20px;
     background: url(../img/advantage-leaf@1x.png) no-repeat center;
     background-color: #68b738;
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top:0;
+      left:0;
+      width: 80px;
+      height: 80px;
+    }
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top:0;
+      left:0;
+      width: 80px;
+      height: 80px;
+    }
+  }
+  &--food::after {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: -39px;
+      right: 93px;
+      z-index: 1;
+      content: "1";
+      color: #f2f2f2;
+      font-family: $main-font;
+      font-size: 281px;
+      font-weight: 400;
+      line-height: 281.07px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: -39px;
+      right: 93px;
+      z-index: 1;
+      content: "1";
+      color: #f2f2f2;
+      font-family: $main-font;
+      font-size: 281px;
+      font-weight: 400;
+      line-height: 281.07px;
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
   &--powder-form::before {
     content: " ";
@@ -38,6 +111,50 @@
     margin-right: 20px;
     background: url(../img/advantage-powder@1x.png) no-repeat center;
     background-color: #68b738;
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top:0;
+      left:0;
+      width: 80px;
+      height: 80px;
+    }
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top:0;
+      left:0;
+      width: 80px;
+      height: 80px;
+    }
+  }
+  &--powder-form::after {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: -39px;
+      right: 78px;
+      z-index: 1;
+      content: "2";
+      color: #f2f2f2;
+      font-family: $main-font;
+      font-size: 281px;
+      font-weight: 400;
+      line-height: 281.07px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: -39px;
+      right: 78px;
+      z-index: 1;
+      content: "2";
+      color: #f2f2f2;
+      font-family: $main-font;
+      font-size: 281px;
+      font-weight: 400;
+      line-height: 281.07px;
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
   &--one-meal::before {
     content: " ";
@@ -48,6 +165,50 @@
     margin-right: 20px;
     background: url(../img/advantage-dining@1x.png) no-repeat center;
     background-color: #68b738;
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top:0;
+      left:0;
+      width: 80px;
+      height: 80px;
+    }
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top:0;
+      left:0;
+      width: 80px;
+      height: 80px;
+    }
+  }
+  &--one-meal::after {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: -39px;
+      right: 75px;
+      z-index: 1;
+      content: "3";
+      color: #f2f2f2;
+      font-family: $main-font;
+      font-size: 281px;
+      font-weight: 400;
+      line-height: 281.07px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: -39px;
+      right: 75px;
+      z-index: 1;
+      content: "3";
+      color: #f2f2f2;
+      font-family: $main-font;
+      font-size: 281px;
+      font-weight: 400;
+      line-height: 281.07px;
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
   &--fast-result::before {
     content: " ";
@@ -58,6 +219,50 @@
     margin-right: 20px;
     background: url(../img/advantage-clock@1x.png) no-repeat center;
     background-color: #68b738;
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top:0;
+      left:0;
+      width: 80px;
+      height: 80px;
+    }
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top:0;
+      left:0;
+      width: 80px;
+      height: 80px;
+    }
+  }
+  &--fast-result::after {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: -39px;
+      right: 74px;
+      z-index: 1;
+      content: "4";
+      color: #f2f2f2;
+      font-family: $main-font;
+      font-size: 281px;
+      font-weight: 400;
+      line-height: 281.07px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: -39px;
+      right: 74px;
+      z-index: 1;
+      content: "4";
+      color: #f2f2f2;
+      font-family: $main-font;
+      font-size: 281px;
+      font-weight: 400;
+      line-height: 281.07px;
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
 }
 
@@ -65,4 +270,14 @@
   width: 195px;
   padding: 0;
   margin: 0;
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    margin-top: 112px;
+    z-index: 3;
+  }
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin-top: 112px;
+    z-index: 3;
+  }
 }
