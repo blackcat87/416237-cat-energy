@@ -4,13 +4,12 @@
     &~.example-effect__img--before {
       display: block;
     }
-    &~.example-effect__indicator {
+    &~ .example-effect__toggle .example-effect__indicator {
       justify-content: flex-start;
       &::before {
         content: " ";
         display: inline-block;
         width: 50%;
-        padding: 3px;
         background-clip: content-box;
         border-radius: 10px;
         background-color: #68b738;
@@ -22,13 +21,12 @@
     &~.example-effect__img--after {
       display: block;
     }
-    &~.example-effect__indicator {
+    &~.example-effect__toggle .example-effect__indicator {
       justify-content: flex-end;
       &::before {
         content: " ";
         display: inline-block;
         width: 50%;
-        padding: 3px;
         background-clip: content-box;
         border-radius: 10px;
         background-color: #68b738;
@@ -44,12 +42,13 @@
 }
 
 .example-effect__indicator {
-  display: inline-flex;
+  display: flex;
   border: 1px solid #cdcdcd;
   border-radius: 10px;
   background: #fff;
   width: 84px;
   height: 14px;
+  padding: 3px;
 }
 
 .example-effect__btn {
@@ -66,4 +65,10 @@
   line-height: 20px;
   text-transform: uppercase;
   padding: 0 15px;
+}
+
+.example-effect__toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

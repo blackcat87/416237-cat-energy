@@ -49,9 +49,15 @@
   }
   &:focus {
     border: 1px solid #444444;
+    & + svg {
+      fill:#68b738;
+    }
   }
   &--error {
     border: 1px solid #ff8282;
+    & + svg {
+      fill:#ff8282;
+    }
   }
 }
 
@@ -181,9 +187,6 @@
   margin-bottom: 16px;
   align-items: center;
   padding: 0 20px;
-  &:focus svg {
-    fill: #68b738;
-  }
   &--email svg {
     position: absolute;
     top: 15px;
