@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'Oswald';
-  src: url('../fonts/Oswaldregular.woff2') format('woff2'), url('../fonts/Oswaldregular.woff') format('woff');
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Oswald';
-  src: url('../fonts/Oswaldmedium.woff2') format('woff2'), url('../fonts/Oswaldmedium.woff') format('woff');
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmeduim.woff2") format("woff2"), url("../fonts/oswaldmeduim.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
@@ -54,9 +54,15 @@ img {
 }
 
 %container {
-  width: 320px;
+  width: $mobile-width;
   margin-left: auto;
   margin-right: auto;
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
 
 %icon-title {
@@ -70,6 +76,7 @@ img {
     margin-right: 20px;
     background-color: #68b738;
   }
+
   &::after {
     content: " ";
     display: block;
@@ -123,9 +130,4 @@ img {
   font-weight: 400;
   line-height: 37.02px;
   text-transform: uppercase;
-}
-
-@mixin set-font-size ($font-size: 16px) {
-  font-size: $font-size;
-  font-size: #{($font-size/16px)}rem;
 }
