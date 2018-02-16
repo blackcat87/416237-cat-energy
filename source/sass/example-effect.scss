@@ -1,7 +1,7 @@
 .example-effect__radio {
   display: none;
   &--before:checked {
-    &~.example-effect__img--before {
+    &~.example-effect__img-container .example-effect__img--before {
       display: block;
     }
     &~.example-effect__toggle .example-effect__indicator {
@@ -32,7 +32,7 @@
     }
   }
   &--after:checked {
-    &~.example-effect__img--after {
+    &~.example-effect__img-container .example-effect__img--after {
       display: block;
     }
     &~.example-effect__toggle .example-effect__indicator {
@@ -50,9 +50,39 @@
   }
 }
 
-.example-effect__img {
+.example-effect__img-container {
+  position: relative;
+  height: 240px;
+  @media (min-width: $tablet-width) {
+
+    height: 270px;
+  }
+  @media (min-width: $desktop-width) {
+    height: 510px;
+  }
+}
+
+
+.example-effect__img-container .example-effect__img {
   display: none;
   margin-bottom: 33px;
+  width: auto;
+  height: 240px;
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 510px;
+    &--before {
+      z-index: 3;
+    }
+    &--after {
+      z-index: 4;
+    }
+  }
+  @media (min-width: $desktop-width) {
+    height: 510px;
+  }
 }
 
 .example-effect__indicator {

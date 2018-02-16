@@ -100,6 +100,14 @@
     width: 26px;
     height: 2px;
     background-color: #3e4242;
+    @media (min-width: $tablet-width) {
+      top: 9px;
+      left: 131px;
+    }
+    @media (min-width: $desktop-width) {
+      top: 9px;
+      left: 131px;
+    }
   }
   &::after {
     position: absolute;
@@ -111,6 +119,14 @@
     border-left: 7px solid #3e4242;
     width: 0;
     height: 0;
+    @media (min-width: $tablet-width) {
+      top: 5px;
+    left: 154px;
+    }
+    @media (min-width: $desktop-width) {
+      top: 5px;
+      left: 154px;
+    }
   }
 }
 

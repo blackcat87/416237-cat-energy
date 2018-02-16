@@ -1,7 +1,6 @@
 .banner {
   @extend %container;
   position: relative;
-  padding: 0 20px;
   margin-bottom: 20px;
   color: #ffffff;
   background: url(../img/index-background-mobile@1x.jpg) no-repeat;
@@ -16,13 +15,10 @@
     margin-bottom: 0;
   }
   @media (min-width: $desktop-width) {
-    padding: 0 70px;
-    background: none;
-    color: #111111;
-    text-align: left;
     padding-left: 123px;
     margin-top: 110px;
-    margin-bottom: 0;
+    margin-bottom: 110px;
+    min-height: 460px;
   }
 }
 
@@ -41,11 +37,7 @@
     margin-bottom: 40px;
   }
   @media (min-width: $desktop-width) {
-    font-size: 60px;
-    line-height: 60px;
-    text-align: left;
-    padding: 0;
-    margin-bottom: 40px;
+      margin-left: 65px;
   }
 }
 
@@ -67,6 +59,7 @@
     line-height: 20px;
     text-align: left;
     margin-bottom: 55px;
+    margin-left: 65px;
   }
 }
 
@@ -78,6 +71,9 @@
     height: 609px;
   }
   @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -70px;
+    right: 325px;
     width: 552px;
     height: 499px;
   }

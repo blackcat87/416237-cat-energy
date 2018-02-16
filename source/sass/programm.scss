@@ -2,12 +2,11 @@
   @extend %container;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 20px;
   @media (min-width: $tablet-width) {
-    padding: 0;
+
   }
   @media (min-width: $desktop-width) {
-    padding: 0;
+
   }
 }
 
@@ -21,13 +20,24 @@
   width: 100%;
   padding: 28px 20px 20px;
   margin-bottom: 20px;
+  br {
+    display: none;
+  }
   @media (min-width: $tablet-width) {
-    padding: 0 280px 20px 52px;
+    padding: 0 342px 20px 52px;
     margin-bottom: 30px;
+    br {
+      display: inline;
+    }
   }
   @media (min-width: $desktop-width) {
-    padding: 0 280px 20px 52px;
+    width: 570px;
+    padding: 0 52px;
     margin-bottom: 30px;
+    margin-right: 80px;
+&:nth-child(2){
+  margin-right: 0;
+}
   }
 }
 
@@ -97,7 +107,7 @@
         height: 194px;
         top: -11px;
         left: 30px;
-        }
+      }
       @media (min-width: $desktop-width) {
         width: 70px;
         height: 97px;

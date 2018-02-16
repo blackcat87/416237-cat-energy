@@ -2,13 +2,13 @@
   @extend %container;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 20px;
+  flex-direction: column;
   margin-bottom: 20px;
   @media (min-width: $tablet-width) {
-    padding: 0;
+
   }
   @media (min-width: $desktop-width) {
-    padding: 0;
+
   }
 }
 
@@ -89,8 +89,8 @@
     }
     @media (min-width: $desktop-width) {
       position: absolute;
-      top: -39px;
-      right: 93px;
+      top: -40px;
+      right: 16px;
       z-index: 1;
       content: "1";
       color: #f2f2f2;
@@ -144,7 +144,7 @@
     @media (min-width: $desktop-width) {
       position: absolute;
       top: -39px;
-      right: 78px;
+      right: 0;
       z-index: 1;
       content: "2";
       color: #f2f2f2;
@@ -198,7 +198,7 @@
     @media (min-width: $desktop-width) {
       position: absolute;
       top: -39px;
-      right: 75px;
+      right: 0;
       z-index: 1;
       content: "3";
       color: #f2f2f2;
@@ -252,7 +252,7 @@
     @media (min-width: $desktop-width) {
       position: absolute;
       top: -39px;
-      right: 74px;
+      right: -4px;
       z-index: 1;
       content: "4";
       color: #f2f2f2;
