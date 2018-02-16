@@ -9,7 +9,7 @@
 }
 
 .catalog__list {
-  @extend %default-list
+  @extend %default-list;
 }
 
 .catalog__item {
