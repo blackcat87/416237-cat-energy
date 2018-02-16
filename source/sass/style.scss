@@ -1,6 +1,7 @@
 @import "../../node_modules/normalize-scss/sass/normalize/import-now";
 @import "./variables";
 @import "./common";
+@import "./button";
 @import "./header";
 @import "./logo";
 @import "./main-nav";
@@ -20,10 +21,11 @@
 @import "./catalog";
 @import "./catalog-item";
 @import "./item-table";
-@import "./button";
 @import "./catalog-item-add";
 @import "./catalog-add";
 @import "./list-add";
 @import "./order-all";
 @import "./choose-programm";
 @import "./form-feedback";
+@import "./footer-contacts";
+@import "./footer-map";

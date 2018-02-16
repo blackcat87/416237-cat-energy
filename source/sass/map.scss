@@ -1,12 +1,24 @@
 .map {
-  @extend %container;
   position: relative;
-  margin-bottom: 40px;
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    height: 400px;
+  }
+  @media (min-width: $desktop-width) {
+  height: 400px;
+}
 }
 
 .map__img {
   width: 320px;
   height: 360px;
+  @media (min-width: $tablet-width) {
+    width: auto;
+    height: 400px;
+  }
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .map__logo {

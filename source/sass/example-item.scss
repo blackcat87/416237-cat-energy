@@ -4,6 +4,14 @@
   height: 56px;
   border-radius: 3px;
   border: 1px solid #cdcdcd;
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 72px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 162px;
+    height: 72px;
+  }
 }
 
 .example-item__content {
@@ -14,6 +22,14 @@
   margin: 0;
   margin-bottom: -10px;
   background-color: $bg-color-grey;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    background: #ffffff;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    background: #ffffff;
+  }
 }
 
 .example-item__title {
@@ -24,6 +40,16 @@
   line-height: 24px;
   text-transform: uppercase;
   padding-top: 10px;
+  @media (min-width: $tablet-width) {
+    line-height: 37.02px;
+    font-size: 30px;
+    padding-top: 15px;
+  }
+  @media (min-width: $desktop-width) {
+    line-height: 37.02px;
+    font-size: 30px;
+    padding-top: 15px;
+  }
 }
 
 .example-item__text {
@@ -35,4 +61,16 @@
   width: 60px;
   margin: 0 auto;
   margin-top: 10px;
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    width: 125px;
+    padding: 0 10px;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 14px;
+    width: 125px;
+    padding: 0 10px;
+  }
 }

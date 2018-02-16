@@ -1,23 +1,59 @@
 .example {
-  @extend %container;
+  min-width: 320px;
   background: #f2f2f2;
   margin: 0;
   padding: 20px 0 35px;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    background: #ffffff; // background-image: linear-gradient(to bottom, #fff 55%, #eaeaea 55%)
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    background: #ffffff;
+  }
+}
+
+.example__content {
+  @extend %container;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .example__title {
+  @extend %container;
   @extend %font-h2;
   align-items: flex-start;
   margin-bottom: 22px;
   padding: 0 20px 0 20px;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .example__description {
+  @extend %container;
   @extend %font-content;
-padding: 0 20px;
+  padding: 0 20px;
+  @media (min-width: $tablet-width) {
+    padding: 0 35px 0 0;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .example__list {
+  @extend %container;
   @extend %default-list;
   display: flex;
   flex-wrap: wrap;
@@ -25,10 +61,18 @@ padding: 0 20px;
   margin-top: 25px;
   margin-bottom: 35px;
   padding: 0 20px;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 367px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 367px;
+  }
 }
 
-
 .example__price {
+  @extend %container;
   color: #111111;
   font-family: $main-font;
   font-size: 14px;
@@ -38,13 +82,29 @@ padding: 0 20px;
   text-align: center;
   margin-top: 20px;
   padding: 0 20px;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    width: 175px;
+    padding: 0;
+    line-height: 1.5;
+    text-align: right;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    width: 175px;
+    padding: 0;
+    line-height: 1.5;
+    text-align: right;
+  }
 }
 
 .example__img {
+  @extend %container;
   text-align: center;
 }
 
 .example__effect {
+  @extend %container;
   text-align: center;
   margin-top: 30px;
 }
