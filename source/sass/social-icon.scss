@@ -2,16 +2,55 @@
   display: flex;
   padding: 0 70px;
   justify-content: space-evenly;
+  @media (min-width: $tablet-width) {
 
+
+  }
+  @media (min-width: $desktop-width) {
+    width: 125px;
+    justify-content: space-between;
+  }
 }
 
 .social-icon__item {
   text-align: center;
+  padding: 0 10px;
+  &--vk{
+    width: 22px;
+    height: 12px;
+
+  }
+  &--instagram{
+    width: 16px;
+    height: 16px;
+  }
+  &--facebook{
+    width: 10px;
+    height: 19px;
+  }
+  @media (min-width: $tablet-width) {
+
+    padding: 0 14px;
+    &--vk{
+      width: 30px;
+      height: 16px;
+
+    }
+    &--instagram{
+      width: 23px;
+      height: 23px;
+    }
+    &--facebook{
+      width: 14px;
+      height: 28px;
+    }
+  }
 }
 
 .social-icon__item svg {
   fill: #666666;
 }
+
 .social-icon__item svg:hover {
   fill: #a4d189;
 }

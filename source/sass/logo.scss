@@ -1,20 +1,48 @@
 .logo {
-  min-height: 65px;
+  padding: 0 20px;
+  height: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  @media (min-width: $tablet-width) {
+    width: 173px;
+    height: 58px;
+    padding: 0;
+    padding-top: 24px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 203px;
+    height: 58px;
+    padding: 0;
+    padding-top: 54px;
+  }
 }
 
 .logo__img-icon {
   width: 33px;
   height: 38px;
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 58px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 63px;
+  }
 }
 
 .logo__img-name {
   width: 103px;
   height: 19px;
   text-align: center;
+  @media (min-width: $tablet-width) {
+    width: 85px;
+    height: 19px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 120px;
+    height: 23px;
+  }
 }
 
 .logo__link {
@@ -33,7 +61,7 @@
   display: block;
   width: 24px;
   height: 18px;
-  padding:0;
+  padding: 0;
   cursor: pointer;
   border: none;
   &::before {
@@ -69,5 +97,11 @@
       // left:0;
       transform: rotate(-45deg);
     }
+  }
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
