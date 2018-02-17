@@ -1,19 +1,19 @@
 .logo {
-  padding: 0 20px;
   height: 65px;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   @media (min-width: $tablet-width) {
+    padding: 0;
     width: 173px;
     height: 58px;
-    padding: 0;
     padding-top: 24px;
   }
   @media (min-width: $desktop-width) {
+    padding: 0;
     width: 203px;
     height: 58px;
-    padding: 0;
     padding-top: 54px;
   }
 }
@@ -22,12 +22,12 @@
   width: 33px;
   height: 38px;
   @media (min-width: $tablet-width) {
-    width: 70px;
+    width: 173px;
     height: 58px;
   }
   @media (min-width: $desktop-width) {
-    width: 70px;
-    height: 63px;
+    width: 202px;
+    height: 59px;
   }
 }
 
@@ -36,12 +36,10 @@
   height: 19px;
   text-align: center;
   @media (min-width: $tablet-width) {
-    width: 85px;
-    height: 19px;
+    display: none;
   }
   @media (min-width: $desktop-width) {
-    width: 120px;
-    height: 23px;
+    display: none;
   }
 }
 

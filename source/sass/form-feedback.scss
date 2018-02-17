@@ -6,6 +6,15 @@
   line-height: 18px;
   text-transform: uppercase;
   margin-top: 40px;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 37px;
+  }
 }
 
 .form-feedback fieldset {
@@ -20,12 +29,46 @@
   border-bottom: 1px solid #ededed;
   border-top: 1px solid #ededed;
   margin: 10px 0;
+  @media (min-width: $tablet-width) {
+    border: 1px solid #ededed;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.form-feedback__fieldset {
+  @media (min-width: $desktop-width) {
+    &--info {
+      width: 760px;
+    }
+    &--choose {
+      width: 570px;
+    }
+    &--contact-info {
+      width: 100%;
+    }
+    &--comment {
+      width: 100%;
+    }
+    &--add-product {
+      width: 100%;
+    }
+  }
 }
 
 .form-feedback__list-add {
   list-style: none;
   margin: 0;
   padding: 0 20px 20px;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 30px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .form-feedback__label {
@@ -37,6 +80,10 @@
   text-transform: uppercase;
   white-space: nowrap;
   margin-right: 14px;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .form-feedback__input {
@@ -44,19 +91,23 @@
   width: 82%;
   outline: none;
   border: 1px solid rgba(205, 205, 205, 0.5);
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding: 13px 23px 14px;
+  }
   &:hover {
     border: 1px solid rgba(205, 205, 205, 1);
   }
   &:focus {
     border: 1px solid #444444;
-    & + svg {
-      fill:#68b738;
+    &+svg {
+      fill: #68b738;
     }
   }
   &--error {
     border: 1px solid #ff8282;
-    & + svg {
-      fill:#ff8282;
+    &+svg {
+      fill: #ff8282;
     }
   }
 }
@@ -75,6 +126,10 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .form-feedback__legend {
@@ -87,6 +142,11 @@
   width: 100%;
   display: flex;
   margin: 16px 0 34px;
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 70px;
+  }
   &::after {
     content: " ";
     display: block;
@@ -94,13 +154,41 @@
     width: 50%;
     margin-top: 14px;
     background-color: #68b738;
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      margin-top: 21px;
+    }
+  }
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: " ";
+      display: block;
+      height: 3px;
+      width: 3%;
+      background-color: #68b738;
+      margin-top: 21px;
+    }
+    @media (min-width: $desktop-width) {
+      &::before {
+        width: 7%;
+      }
+    }
   }
 }
 
 .form-feedback__legend span {
-  background: #fff;
+  background: #ffffff;
   padding-right: 20px;
   padding-left: 20px;
+  @media (min-width: $tablet-width) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-right: 30px;
+    padding-left: 30px;
+    white-space: nowrap;
+  }
 }
 
 .form-feedback__textarea {
@@ -126,6 +214,10 @@
   border: 1px solid #cdcdcd;
   vertical-align: text-bottom;
   margin-right: 17px;
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .form-feedback__radio-label::before {
@@ -137,6 +229,11 @@
   border-radius: 50%;
   vertical-align: text-bottom;
   margin-right: 17px;
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    margin-right: 22px;
+  }
 }
 
 .form-feedback__radio:checked+.form-feedback__radio-label::before {
@@ -150,6 +247,11 @@
   border: 1px solid #cdcdcd;
   padding: 7px;
   background-clip: content-box;
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
 }
 
 .form-feedback__checkbox:checked+.form-feedback__checkbox-label::after {
@@ -164,10 +266,20 @@
   border-right: none;
   -webkit-transform: rotate(-50deg);
   transform: rotate(-50deg);
+  @media (min-width: $tablet-width) {
+    left: 10px;
+  }
 }
 
 .form-feedback__item {
   margin-bottom: 12px;
+  @media (min-width: $tablet-width) {
+    min-width: 310px;
+    padding-right: 20px;
+  }
+  @media (min-width: $desktop-width) {
+    min-width: 305px;
+  }
   &:active {
     opacity: 0.3;
   }
@@ -187,6 +299,16 @@
   margin-bottom: 16px;
   align-items: center;
   padding: 0 20px;
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    margin-bottom: 20px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
   &--email svg {
     position: absolute;
     top: 15px;

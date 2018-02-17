@@ -1,15 +1,21 @@
 .example {
-  min-width: 320px;
+  min-width: $mobile-width;
   background: #f2f2f2;
-  margin: 0;
+  margin: 0 auto;
   padding: 20px 0 35px;
   @media (min-width: $tablet-width) {
+    width: $tablet-width;
     padding: 0;
-    background: #ffffff; // background-image: linear-gradient(to bottom, #fff 55%, #eaeaea 55%)
+    background-image: linear-gradient(to bottom, #fff 55%, $bg-color-grey 55%);
   }
   @media (min-width: $desktop-width) {
-    padding: 0;
-    background: #ffffff;
+    width: $desktop-width;
+    background-image: linear-gradient(to bottom, #fff 29%, #f2f2f2 29%);
+    padding: 0 110px;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding-bottom: 70px;
+    display: flex;
   }
 }
 
@@ -23,6 +29,11 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 530px;
+    padding-top: 55px;
   }
 }
 
@@ -36,7 +47,7 @@
     padding: 0;
   }
   @media (min-width: $desktop-width) {
-    padding: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -49,6 +60,8 @@
   }
   @media (min-width: $desktop-width) {
     padding: 0;
+    width: 435px;
+    margin: 130px 0 22px 0;
   }
 }
 
@@ -65,10 +78,6 @@
     padding: 0;
     width: 367px;
   }
-  @media (min-width: $desktop-width) {
-    padding: 0;
-    width: 367px;
-  }
 }
 
 .example__price {
@@ -82,6 +91,9 @@
   text-align: center;
   margin-top: 20px;
   padding: 0 20px;
+  & p {
+    margin: 0;
+  }
   @media (min-width: $tablet-width) {
     font-size: 20px;
     width: 175px;
@@ -90,11 +102,9 @@
     text-align: right;
   }
   @media (min-width: $desktop-width) {
-    font-size: 20px;
-    width: 175px;
-    padding: 0;
-    line-height: 1.5;
-    text-align: right;
+    text-align: left;
+    width: 325px;
+    text-align: center;
   }
 }
 
@@ -107,4 +117,8 @@
   @extend %container;
   text-align: center;
   margin-top: 30px;
+  @media (min-width: $tablet-width) {
+    width: 690px;
+    margin-top: 0;
+  }
 }

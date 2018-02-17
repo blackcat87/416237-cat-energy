@@ -8,10 +8,6 @@
     width: 162px;
     height: 72px;
   }
-  @media (min-width: $desktop-width) {
-    width: 162px;
-    height: 72px;
-  }
 }
 
 .example-item__content {
@@ -28,7 +24,7 @@
   }
   @media (min-width: $desktop-width) {
     padding: 0;
-    background: #ffffff;
+    background: $bg-color-grey;
   }
 }
 
@@ -41,11 +37,6 @@
   text-transform: uppercase;
   padding-top: 10px;
   @media (min-width: $tablet-width) {
-    line-height: 37.02px;
-    font-size: 30px;
-    padding-top: 15px;
-  }
-  @media (min-width: $desktop-width) {
     line-height: 37.02px;
     font-size: 30px;
     padding-top: 15px;
@@ -64,13 +55,7 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
-    width: 125px;
-    padding: 0 10px;
-  }
-  @media (min-width: $desktop-width) {
-    font-size: 14px;
-    line-height: 14px;
-    width: 125px;
+    width: 100%;
     padding: 0 10px;
   }
 }

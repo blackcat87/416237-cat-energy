@@ -1,3 +1,9 @@
+.list-add {
+  @media (min-width: $desktop-width) {
+    width: 895px;
+  }
+}
+
 .list-add__item {
   display: flex;
   justify-content: space-between;
@@ -5,11 +11,30 @@
   border-bottom: 1px solid #ededed;
   padding: 14px 20px 15px;
   margin: 0;
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 140px;
+    border: 1px solid rgba(205, 205, 205, 0.5);
+    border-top: none;
+    padding: 36px 38px 30px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 895px;
+    height: 71px;
+    border-left: none;
+    border-right: none;
+    padding: 0;
+    align-items: center;
+  }
 }
 
 .list-add__item:first-child {
   border-top: 1px solid #ededed;
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid rgba(205, 205, 205, 0.5);
+  }
 }
+
 .list-add__title {
   width: 100%;
   color: #222222;
@@ -20,10 +45,18 @@
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  @media (min-width: $tablet-width) {
+    width: 315px;
+    padding-right: 30px;
+    line-height: 20px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    padding-right: 40px;
+  }
 }
 
 .list-add__description {
-  padding: 10px 0;
   width: 100%;
   list-style: none;
   display: flex;
@@ -35,4 +68,25 @@
   line-height: 14px;
   padding: 0;
   margin: 12px 0 17px;
+  @media (min-width: $tablet-width) {
+    width: 288px;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+  }
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    padding-right: 40px;
+  }
+}
+
+.list-add__button {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-top: 20px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin-top: 0;
+  }
 }

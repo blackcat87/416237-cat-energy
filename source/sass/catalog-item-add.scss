@@ -1,6 +1,30 @@
 .catalog-item-add {
   text-align: center;
   padding-top: 25px;
+  & svg {
+    width: 30px;
+    height: 30px;
+    opacity: 0.2;
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 16px;
+    }
+  }
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 431px;
+    border: 1px solid rgba(205, 205, 205, 0.5);
+    padding: 0 38px 40px 37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 55px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .catalog-item-add__title {
@@ -11,6 +35,10 @@
   line-height: 20px;
   text-transform: uppercase;
   margin-top: 18px;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin: 0;
+  }
 }
 
 .catalog-item-add__text {
@@ -20,4 +48,15 @@
   font-weight: 400;
   line-height: 16px;
   margin-bottom: 20px;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+  }
+}
+
+.catalog-item-add__button {
+  @media (min-width: $desktop-width) {
+    margin-top: 45px;
+  }
 }

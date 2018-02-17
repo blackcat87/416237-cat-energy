@@ -1,5 +1,15 @@
 .catalog-add {
   @extend %container;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 90px;
+    justify-content: space-between;
+  }
 }
 
 .catalog-add__title {
@@ -10,11 +20,15 @@
   line-height: 24px;
   margin: 28px 0 34px;
   width: 100%;
-  background-image: linear-gradient(to bottom, #fff 14px, #68b738 14px, #68b738 17px, #fff 17px);
+  background-image: linear-gradient(to bottom, #ffffff 14px, #68b738 14px, #68b738 17px, #ffffff 17px);
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .catalog-add__title span {
-  background: #fff;
+  background: #ffffff;
   padding-right: 20px;
   padding-left: 20px;
 }

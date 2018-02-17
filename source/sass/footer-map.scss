@@ -1,7 +1,5 @@
 .footer-map {
   position: relative;
   @extend %container;
-  @media (min-width: $desktop-width) {
-    background: url(../img/map-desktop.jpg) no-repeat;
-  }
+  padding: 0;
 }

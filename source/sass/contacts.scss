@@ -8,10 +8,10 @@
   }
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 20px;
+    top: 95px;
     left: 110px;
     width: 570px;
-    padding: 70px 70px;
+    padding: 55px 60px 37px 76px;
     z-index: 5;
   }
 }
@@ -19,6 +19,12 @@
 .contacts--second-page {
   padding: 20px 20px 14px;
   background: #f2f2f2;
+  @media (min-width: $tablet-width) {
+    padding: 70px 40px;
+  }
+  @media (min-width: $desktop-width) {
+    background: #ffffff;
+  }
 }
 
 .contacts__title {
@@ -29,7 +35,7 @@
   line-height: 20px;
   text-transform: uppercase;
   padding: 0;
-  width: 50%;
+  width: 58%;
   margin: 10px 0;
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -44,8 +50,17 @@
 .contacts__adress {
   @extend %font-content;
   padding: 0;
-  width: 50%;
+  width: 42%;
+  line-height: 20px;
+  @media (min-width: $tablet-width) {
+    & p {
+      margin: 8px 0 19px;
+    }
+  }
   & p:nth-child(2) {
     margin-top: -14px;
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+    }
   }
 }
