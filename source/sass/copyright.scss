@@ -15,8 +15,10 @@
     }
     @media (min-width: $desktop-width) {
       width: 125px;
-      display: none;
     }
+  }
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }
 
@@ -26,6 +28,13 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
+  @media (min-width: $tablet-width) {
+    padding-right: 17px;
+    padding-top: 6px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .copyright svg {
@@ -34,6 +43,14 @@
   margin-right: -5px;
   margin-top: 5px;
   fill: #666666;
+  @media (min-width: $tablet-width) {
+    margin-right: -6px;
+    margin-top: 11px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-right: -8px;
+    margin-top: 5px;
+  }
 }
 
 .copyright svg:hover {

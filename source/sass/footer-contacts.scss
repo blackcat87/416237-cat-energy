@@ -2,9 +2,9 @@
   @extend %container;
   padding-top: 40px;
   background: #f2f2f2;
-  @media (min-width: $desktop-width) {
-    padding-top: 41px;
-    padding-bottom: 65px;
+  @media (min-width: $tablet-width) {
+    padding-top: 51px;
+    padding-bottom: 50px;
   }
 }
 

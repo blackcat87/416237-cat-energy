@@ -16,32 +16,30 @@
 .social-icon__item {
   text-align: center;
   padding: 0 10px;
-  &--vk{
+  &--vk {
     width: 22px;
     height: 12px;
-
   }
-  &--instagram{
+  &--instagram {
     width: 16px;
     height: 16px;
   }
-  &--facebook{
+  &--facebook {
     width: 10px;
     height: 19px;
   }
   @media (min-width: $tablet-width) {
-
-    padding: 0 14px;
-    &--vk{
+    padding: 0;
+    padding-right: 29px;
+    &--vk {
       width: 30px;
       height: 16px;
-
     }
-    &--instagram{
+    &--instagram {
       width: 23px;
       height: 23px;
     }
-    &--facebook{
+    &--facebook {
       width: 14px;
       height: 28px;
     }

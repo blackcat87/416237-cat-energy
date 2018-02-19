@@ -1,10 +1,12 @@
 .contacts {
-  padding: 18px 20px 15px;
+  padding: 20px 20px 8px;
   display: flex;
   justify-content: space-between;
   background: #ffffff;
+
   @media (min-width: $tablet-width) {
-    padding: 70px 40px;
+    padding: 45px 72px;
+
   }
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -13,6 +15,7 @@
     width: 570px;
     padding: 55px 60px 37px 76px;
     z-index: 5;
+
   }
 }
 
@@ -35,26 +38,32 @@
   line-height: 20px;
   text-transform: uppercase;
   padding: 0;
-  width: 58%;
+  width: 50%;
   margin: 10px 0;
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 25px;
+    margin: 0;
+    margin-top: 19px;
   }
   @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 25px;
+    margin: 10px 0;
   }
 }
 
 .contacts__adress {
   @extend %font-content;
   padding: 0;
-  width: 42%;
+  width: 50%;
   line-height: 20px;
+  margin-top: -4px;
   @media (min-width: $tablet-width) {
+    text-align: right;
+    margin-top: 0;
+  }
+  @media (min-width: $desktop-width) {
     & p {
-      margin: 8px 0 19px;
+      margin: 8px -2px 20px;
     }
   }
   & p:nth-child(2) {

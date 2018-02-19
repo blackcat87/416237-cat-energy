@@ -7,7 +7,7 @@
   @media (min-width: $tablet-width) {
     min-height: 58px;
     width: 438px;
-    padding-top: 24px;
+    padding-top: 22px;
     margin: 0;
     align-items: center;
     justify-content: flex-end;
@@ -16,14 +16,12 @@
     min-height: 59px;
     width: 477px;
     padding-top: 45px;
-    margin: 0 0 28px;
-    align-items: center;
-    justify-content: flex-end;
   }
 }
 
 .main-nav__wrapper {
   display: block;
+  width: 100%;
   @media (min-width: $tablet-width) {
     display: block;
     width: 100%;

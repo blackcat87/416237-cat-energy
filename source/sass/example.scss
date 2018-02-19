@@ -7,6 +7,10 @@
     width: $tablet-width;
     padding: 0;
     background-image: linear-gradient(to bottom, #fff 55%, $bg-color-grey 55%);
+    border-top: 1px solid #f2f2f2;
+    margin-top: -51px;
+    padding-top: 43px;
+    padding-bottom: 69px;
   }
   @media (min-width: $desktop-width) {
     width: $desktop-width;
@@ -14,17 +18,19 @@
     padding: 0 110px;
     margin: 0 auto;
     margin-top: 25px;
-    padding-bottom: 70px;
+    padding-bottom: 69px;
     display: flex;
   }
 }
 
 .example__content {
   @extend %container;
+  padding: 0;
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0 30px;
   }
   @media (min-width: $desktop-width) {
     display: flex;
@@ -42,8 +48,8 @@
   @extend %font-h2;
   align-items: flex-start;
   margin-bottom: 22px;
-  padding: 0 20px 0 20px;
   @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
     padding: 0;
   }
   @media (min-width: $desktop-width) {
@@ -54,14 +60,13 @@
 .example__description {
   @extend %container;
   @extend %font-content;
-  padding: 0 20px;
   @media (min-width: $tablet-width) {
-    padding: 0 35px 0 0;
+    padding: 0 25px 11px 0;
   }
   @media (min-width: $desktop-width) {
     padding: 0;
     width: 435px;
-    margin: 130px 0 22px 0;
+    margin: 111px 0 6px 0;
   }
 }
 
@@ -76,7 +81,8 @@
   padding: 0 20px;
   @media (min-width: $tablet-width) {
     padding: 0;
-    width: 367px;
+    width: 365px;
+    margin-bottom: 86px;
   }
 }
 
@@ -91,8 +97,14 @@
   text-align: center;
   margin-top: 20px;
   padding: 0 20px;
+  display: flex;
+  justify-content: center;
   & p {
     margin: 0;
+    @media (min-width: $desktop-width) {
+      text-align: left;
+      width: 100%;
+    }
   }
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -100,11 +112,14 @@
     padding: 0;
     line-height: 1.5;
     text-align: right;
+    margin-top: 31px;
+    margin-right: 0;
+    display: block;
   }
   @media (min-width: $desktop-width) {
-    text-align: left;
-    width: 325px;
-    text-align: center;
+    margin: 0;
+    width: 475px;
+    display: flex;
   }
 }
 
